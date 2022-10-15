@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Crete+Round&family=DM+Serif+Display&family=Kaushan+Script&family=Oswald:wght@500&family=Pacifico&family=Roboto+Mono:wght@400;500&family=Teko:wght@300&family=Yantramanav:wght@100;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+}
+.container1{
+  display: flex;
+  z-index: 1;
+  width: 100vw;
+  height: 60px;
+  overflow:auto;
+  position: fixed;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 2px 2px 20px #333;
+}
+.container1 h1{
+  margin: 9px;
+  color: rgb(14, 145, 116);
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Yantramanav', sans-serif;
+}
+.navcontent li {
+  display: inline-flex;
+  padding: 15px;
+  justify-content: space-between;
+  list-style: none;
+}
+.navcontent li a{
+  color: rgb(117, 109, 109);
+  text-decoration: none;
+  transition: all 2s ease;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Yantramanav', sans-serif;
+}
+.navcontent li a:hover {
+  color: rgb(14, 145, 116)
+}
+.icon{
+  display: flex;
+ height: 60px;
+ font-size: 20px;
+ /* margin:15px; */
+}
+.icon a #menue,.icon a #search{
+  
+  padding: 1.13pc;
+  /* margin: 0; */
+  border-left: 1px solid #333;
+}
+.icon #menue{
+  display: none;
+}
+/* contact page appbar */
+.c-left{
+    display: block;
+    padding: 0;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    background: #da0c61;
+    margin-top: 60px;
+}
+.c-navcontent li {
+    text-align: center;
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid  #3333;
+    justify-content: space-between;
+    list-style: none;
+}
+.c-navcontent li a{
+    color: rgb(250, 243, 243);
+    text-decoration: none;
+    transition: all 2s ease;
+    cursor: pointer;
+    padding: 5px;
+    /* border-bottom: 2px solid ; */
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Yantramanav', sans-serif;
+}
+/* .c-icons{
+    display: flex;
+    justify-content: space-between;
+} */
+.c-icons li{
+    margin: 0.7%;
+    display: inline-flex;
+    list-style: none;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid rgba(167, 146, 129, 0.4);
+    justify-content: space-between;
+}
+.c-icons li a {
+    font-size: 30px;
+    color: #e3e7ec;
+    text-decoration: none;
+    transition: all 2s ease;
+    cursor: pointer;
+}
+.c-icons li:hover{
+    
+      border: 1px solid rgba(167, 146, 129, 1);
+}
+.c-icons li a:hover{
+    color: rgba(167, 146, 129, 1);
+}
+/* ======== Design of Work Page ========= */
+/* bdis */
+.top{
+  padding-top: 60px;
+  margin-left: 20%;
+  display: grid;
+  width: 80%;
+  height: fit-content;
+  background: #1a1e24;
+}
+.top ul
+{
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+.top ul li
+{
+	position: relative;
+	float: right;
+	width: 270.2px;
+	height: 270.2px;
+	overflow: hidden;
+}
+
+.top ul li::before
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	content: '';
+	color: white;
+	opacity: 0.4;
+	text-align: center;
+	box-sizing: border-box;
+	pointer-events: none;
+	transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+}
+.top ul li:hover::before
+{
+	opacity: 0;
+	background-color: rgba(0,0,0,0.90);
+}
+.top ul li img
+{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+  /* transition: all 0.9s ease; */
+}
+/* .top ul li img:hover{
+  transform: scale(1.1);
+} */
+.lightbox
+{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.75);
+	z-index: 999;
+	opacity: 0;
+	pointer-events: none;
+}
+.lightbox img
+{
+	max-width: 90%;
+	max-height: 80%;
+	position: relative;
+	top: -100%;
+	/* Transition */
+	transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+}
+
+.layer{
+  opacity: 0;
+  text-align: center;
+  position: absolute;
+  color:#151E3F;
+  width: 10px;
+  height: 87%;
+  margin: 14px; 
+  background: #09fdf196;
+  transition: all 0.9s ease;
+}
+.layer p{
+  margin-top: 40%;
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+.top li:hover .layer {
+  opacity: 0.7;
+  width: 90%;
+  transition: all 0.5s ease;
+ 
+}
+/* ======== MediaQuery of Work Page ========= */
+@media(max-width:800px)
+{
+  .top ul li
+{
+	position: relative;
+	float: right;
+	width: 196.6px;
+	height: 196.6px;
+	overflow: hidden;
+}
+.top li:hover .layer {
+  /* height: 83%; */
+ width: 87%;
+}
+.c-left{
+  width: 100%;
+}
+}
+
+@media (max-width:395px)
+{
+  html{
+    font-size: 85%;
+}
+.icon{
+    display: flex;
+    height: 60px;
+    font-size: 20px;
+    /* margin:15px; */
+ }
+ .icon a #menue{
+    display: inline-flex;
+ }
+ .icon a #menue,.icon a #search{
+    /* display: ; */
+    padding: 1.2pc;
+    /* margin: 0; */
+    border-left: 1px solid #333;
+}
+
+.c-left{
+        display: none;
+        /* width: 100%; */
+        height: 100vh;
+        transition: 2s ;
+        z-index: 1;
+    }
+    .c-navcontent li a{
+        font-size: 15px;
+    }
+    .c-icons li{
+        justify-content: space-between;
+        margin: 11px;
+    }
+    .c-icons li #menue{
+
+    }
+    .show2{
+      display: block;
+    }
+    .top{
+      display: flex;
+      width: 100%;
+      margin: 0;
+    }
+    .top ul
+    {
+      margin: 10px;
+    	width: 94%;
+    }
+    .top ul li
+    {
+
+	   width: 100%;
+	   
+    }
+    .layer p{
+      margin-top: 20%;
+      font-size: 12px;
+    }
+    .top li:hover .layer {
+      height: 83%;
+     
+    }
+    .c-left{
+      width: 100%;
+    }
+
+}
+
+/* ======== Design of About Page ========= */
+.c-content{
+  margin: 0;
+  /* width: 80%; */
+  height: 100vh;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background: #1a1e24 center fixed;
+  float: right;
+  margin-left: 20%;
+}
+.c-head{
+  padding: 5px;
+  font-size: 50px;
+  font-weight: 1000;
+  letter-spacing:2px;
+  font-family: 'Roboto Mono', monospace;
+  color: #0dd;
+}
+
+.c-para{
+  padding-top: 20px;
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+}
+/* ======== MediaQuery of About Page ========= */
+@media (max-width:460px)
+{
+.c-content{
+  /* margin: 0; */
+  width: 100%;
+  height: 90vh;
+  margin-top: 60px;
+  
+  /* margin-left: 30%; */
+}
+.c-head{
+  /* padding: 5px; */
+  margin-left: 40px;
+  font-size: 30px;
+  font-weight: 900;
+}
+.c-para{
+  margin-left: 49px;
+}
+.c-left{
+  width: 100%;
+}
+}
